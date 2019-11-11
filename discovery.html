@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <link href="discoverystyle.css" rel="stylesheet">
+  </head>
+
+<body>
+  <nav>
+      <ul class="navbar">
+        <li class="dropdown"><a href="outdex.html">Home</a></li>
+        <li class= "dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Country</a>
+          <div class="dropdown-content">
+            <a href="belgium.html"><b>Belgium</b></a>
+            <a href="france.html"><b>France</b></a>
+            <a href="austria.html"><b>Austria</b></a>
+          </div>
+        </li>
+        <li class= "dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Projects</a>
+          <div class="dropdown-content">
+            <a href=litreview.html><b>Literature Review</b></a>
+            <a href="discovery.html"><b>Discovery Log</b></a>
+          </div>
+        </li>
+        <li class="dropdown"><a href="social.html">Social</a></li>
+      </ul>
+     </nav>
+
+    <h1 id="top">DISCOVERY LOG BOOK</h1>
+
+
+    <h2>Contents of Learning Material</h2>
+    <section>
+      <ul class="order">
+        <li>Week 1 : <a href="#week1" class="colour">Introduction to Markup</a></li>
+        <li>Week 2 : <a href="#week2" class="colour">Stying with CSS</a></li>
+        <li>Week 3 : <a href="#week3" class="colour">Adding Links</a></li>
+        <li>Week 4 : <a href="#week4" class="colour">Using Images</a></li>
+        <li>Week 5 : <a href="#week5" class="colour">Editing Efficiently</a></li>
+        <li>Week 6 : <a href="#week6" class="colour">Designing the Website</a></li>
+        <li>Week 7 : <a href="#week7" class="colour">Usabilty</a></li>
+        <li>Week 8 : <a href="#week8" class="colour">Basic Scripting</a></li>
+        <li>Week 9 : <a href="#week8" class="colour">Accessibilty</a></li>
+      </ul>
+      </section>
+
+<section class="first">
+<p id="week1">Introduction to Markup:</p>
+HTML is a fairly simple language made up of elements, After a quick search, we see that a html page has different parts such as a head, a body and a footer (if necessary),
+We usually wrap the items we want to see on our websites with different elements which all proprietary of html.
+For example, if we are defining a paragraph we wrap our paragraph with &lt;p&gt;&lt;/p&gt; elements
+A few things to consider when we are building up our website;
+Our codes need to be semantic to have a meaningful html page.
+We need to follow a certain coding system if we want our page to be found in search engines.
+We always make sure our element’s tag is closed after we opened them (if the element need a closing tag)
+This week in practicle we started to build a website title called Darth Vader, we have a header called ‘Darth Vader’ and a paragraph says ‘Hello Tatooine’
+<p>Basic HTML5 creation.</p>
+<p>&lt;!doctype&gt;</p>
+<p>&lt;title&gt;Darth Vader&lt;/title&gt;</p>
+<p>&lt;h1&gt;Darth Vader&lt;/h1&gt;</p>
+<p>&lt;p&gt;Hello Tatooine&lt;/p&gt;</p>
+</section>
+
+<div><a href="#top">Go to top</a></div>
+
+<section class="second">
+<p id="week2"> Stying with CSS</p>
+We use CSS to define styles for our documents, including the design, layout and variations in display for different devices and screen sizes.
+1st experiment :
+Example.html
+There are two ways to use a stylesheet with an html file.  Stylesheets can be embedded within web pages using the &lt;style&gt; tag,
+or stored in their own file and linked to one or more HTML files with the &lt;link&gt; tag.
+2nd Experiment: we embed the stylesheet
+Embedded.html
+3rd Experiment: we link the stylesheet to the file
+Linked.html
+When a browser displays a document, it must combine the document's content with its style information. It processes the document in two stages:
+<ol>
+  <li>The browser converts the markup language and the CSS into the DOM (Document Object Model). The DOM represents the document in the computer's memory. It combines the document's content with its style.</li>
+  <li>The browser displays the contents of the DOM.</li>
+</ol>
+
+Using CSS to style html gives us unlimited power to design our webpage and make it look very stylish. We can literally style any element or any part of the html document from top the down.
+In our practical session, we were suggest to have an external style sheet written and link that sheet to the html.
+</section>
+<div><a href="#top">Go to top</a></div>
+<section class="third">
+<p id="week3">Adding Links</p>
+    On week 3 we learnt to attached external URL’s to our website using below tags :
+    <p>&lt;a href="url">link text &lt;/a&gt;</p>
+    The href attribute specifies the destination address
+    The link text is the visible part
+    <p>&lt;a&gt; element defines the links we are attaching to our website.</p>
+    <p>&lt;ul id=extlinks&gt;</p>
+    <p>&lt;li&gt;&lt;a href="http://www.telegraph.co.uk/">Daily Newspaper&lt;/a&gt;&lt;/li&gt;</p>
+    <p>&lt;li&gt;&lt;a href="http://www.hurriyet.com.tr/">Daily Turkish News&lt;/a&gt;&lt;/li&gt;</p>
+    <p>&lt;li&gt;&lt;a href="https://twitter.com/">My Social Media&lt;/a&gt;&lt;/li&gt;</p>
+    <p> &lt;li&gt;&lt;a href="https://www.tutorialspoint.com/java/">Easy Study Java&lt;/a&gt;&lt;/li&gt;</p>
+    <p>&lt;/ul&gt;</p>
+    The reason we call it web, it is because it looks like a huge cobweb which means most of the websites are linked to each other
+    and it is important for us to learn how we link different URL to one another or even to link one page to different page in our own website.
+</section>
+<div><a href="#top">Go to top</a></div>
+<section class="fourth">
+<p id="week4">Using Images</p>
+  This week we have managed to link images to our html page. We did that using html &lt;img&gt;tag.
+  This is one of the element that does not need a closing tag.  A typical example of the code is below;
+  &lt;img src="url" alt="some_text" style="width:width;height:height;"&gt;
+  Again we can style our img element in our external style sheet to make it look much more better.
+  It is recommended that we have name for our image (alt=”text”) to help accessibility better.
+</section>
+<div><a href="#top">Go to top</a></div>
+<section class="fifth">
+  <p id="week5">Editing Efficiently</p>
+    This week we mentioned about editors to code our html and how we can use the editors more efficiently.
+    Our practical tutor recommendation was Atom which has some main points to make coding easier :
+    <ul>
+      <li>Syntax highlighting</li>
+      <li>Live preview (in editor or in browser) - Live Page in Chrome</li>
+      <li>Multiple cursors</li>
+      <li>Incremental search</li>
+      <li>Vim mode</li>
+      <li>Highlighting search, selected text</li>
+      <li>Linters, beautifiers - Atom Beautify</li>
+      <li>Customization / personalization</li>
+      <li>Settings, themes, key bindings</li>
+      <li>Streamlined publishing, version control</li>
+    </ul>
+</section>
+<div><a href="#top">Go to top</a></div>
+<section class="sixth">
+  <p id="week6">Designing the Website</p>
+    One of the most important thing is design when it comes to create a new web site.
+    In this week lecture we were introduced why thinking carefully is necessary before we design our website.
+    The main things we need to aim when we design a website are:
+    Suitability,
+    Simplicity;
+    Technical Expertise;
+</section>
+<div><a href="#top">Go to top</a></div>
+<section class="seventh">
+  <p id="week7">Usabilty</p>
+Usability is as important as the designing of our website. Our lecturer tried to explain this week that the importance of optimising our websites. As the technology grows, users have different type of devices with different type of software therefore creating a website usable in all sort of environment is necessary.
+Another important point to mention that we need to make sure our website is usable by elderly people, people who don’t have too much technology knowledge.
+Here is some mistakes we need to tackle
+<ul>
+  <li>Neglecting user aims</li>
+  <li>Neglecting mobile users</li>
+  <li>Inconsistent design /ignoring design conventions</li>
+  <li>Lack of consistency in interactive elements</li>
+  <li>Non-responsive web design</li>
+  <li>No search function</li>
+  <li>Titles with low search engine visibility</li>
+  <li>Unnecessary registration</li>
+  <li>Confusing colour for navigation links</li>
+  <li>Confusing/ experimental navigation</li>
+  <li>Broken links</li>
+  <li>Distracting images</li>
+  <li>Things that look like ads</li>
+  <li>Small clickable areas</li>
+  <li>Opening new browser windows</li>
+  <li>Non-scannable text/ poor readability</li>
+  <li>Old content</li>
+</ul>
+</section>
+<div><a href="#top">Go to top</a></div>
+<section class="eighth">
+  <p id="week8">Basic Scripting</p>
+This week learning subject was Basic Scripting. Scripting makes websites much more fun and interactive but it comes with it disadvantage.
+ It is much more difficult to implement. This week’s practical we saw a fun game created by Jack. It helped us to understand how important to learn scripting to make websites interceptive.
+The websites we are designing at the moment are static website which we don’t need to use too much of scripting.
+</section>
+
+<section class="ninth">
+<p id="week9">Accessibilty</p>
+
+Accessibility : Some measure we can take towards people with different disabilities are
+-Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.
+- Provide alternatives for time-based media.
+- Create content that can be presented in different ways (for example simpler layout) without losing information or structure.
+- Make it easier for users to see and hear content including separating foreground from background.
+
+In this week practical we demonstrated some disability situations and tried to anticipate what they are going through when they surf through internet.
+</section>
+<div><a href="#top">Go to top</a></div>
+
+</body>
+
+</html>
